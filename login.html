@@ -1,0 +1,193 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register Form</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js" nomodule></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box" id="login-box">
+            <form action="#">
+                <h2>Login</h2>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                    <div class="input-line"></div>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                    <div class="input-line"></div>
+                </div>
+                <button type="button">Login</button>
+                <div class="register-link">
+                    <p>Don't have an account? <a href="#register-box">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="register-box" id="register-box">
+            <form action="#">
+                <h2>Register</h2>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                    <div class="input-line"></div>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                    <div class="input-line"></div>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                    <div class="input-line"></div>
+                </div>
+                <button type="button">Register</button>
+                <a href="#login-box" class="close-btn">Close</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Animation CSS | Codehal</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    
+    <div class="login-box">
+        <form action="#">
+            <input type="checkbox" class="input-check" id="input-check">
+            <label for="input-check" class="toggle">
+                <span class="text off">off</span>
+                <span class="text on">on</span>
+            </label>
+            <div class="light"></div>
+
+            <h2>Login</h2>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" required>
+                <label>Email</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" required>
+                <label>Password</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Animation CSS | Codehal</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="signup.html">
+</head>
+<body>
+    <div class="login-box">
+        <form action="#">
+            <input type="checkbox" class="input-check" id="input-check">        
+            <div class="light"></div>
+            <h2>Login</h2>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" required>
+                <label>Email</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" required>
+                <label>Password</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="signup.html">Register</a></p>
+            </div>
+        </form>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        const loginBox = document.querySelector('.login-box');
+        loginBox.addEventListener('mousemove', (e) => {
+            const { offsetX, offsetY } = e;
+            const width = loginBox.offsetWidth;
+            const height = loginBox.offsetHeight;
+
+            const moveX = (offsetX - width / 2) / width * 1;
+            const moveY = (offsetY - height / 2) / height * 1;
+
+            loginBox.style.background = `radial-gradient(circle at ${offsetX}px ${offsetY}px, rgba(0, 255, 255, 0.2), #191919 70%)`;
+            loginBox.style.boxShadow = `0 0 20px rgba(0, 255, 255, 0.5), 0 0 50px rgba(0, 255, 255, 0.3)`;
+            loginBox.style.transform = `rotateX(${moveY}deg) rotateY(${moveX}deg)`;
+        });
+
+        loginBox.addEventListener('mouseout', () => {
+            loginBox.style.background = '#191919';
+            loginBox.style.boxShadow = 'none';
+            loginBox.style.transform = 'rotateX(0deg) rotateY(0deg)';
+        });
+            
+    </script>
+
+</body>
+
+</html>
