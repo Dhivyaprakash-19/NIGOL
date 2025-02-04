@@ -6,3 +6,4 @@ document.getElementById('register').addEventListener('click', function(e) {
         window.location.href = 'signup.html';
     }, 600); // Wait for the flip animation before navigating
 });     
+
